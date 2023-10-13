@@ -8,6 +8,8 @@ import com.thanksen.osahaneat.payload.Request.SignUpRequest;
 import com.thanksen.osahaneat.payload.ResponseData;
 import com.thanksen.osahaneat.unit.DataGenerate;
 import com.thanksen.osahaneat.unit.JwtUtilsHelper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +23,7 @@ public class LoginController {
     private LoginServiceImp loginServiceImp;
     private JwtUtilsHelper jwtUtilsHelper;
     Gson gson = new Gson();
-
+    Logger logger = LoggerFactory.getLogger(this.getClass());
 
 
     @Autowired
@@ -40,6 +42,12 @@ public class LoginController {
     public ResponseEntity<?> SignIn(@RequestParam String username, @RequestParam String password) {
         ResponseData responseData = new ResponseData();
 
+        logger.trace("Kiem tra trace");
+        logger.debug("Kiem tra debug");
+        logger.info("Kiem tra info");
+        logger.warn("Kiem tra warn");
+        logger.error("Kiem tra err");
+
         if (loginServiceImp.checkLogin(username, password)) {
             UsersEntity usersEntity = loginServiceImp.findInfoUser(username);
             //Find Role & username
@@ -56,7 +64,7 @@ public class LoginController {
             responseData.setStatus(200);
             responseData.setObj(token);
             responseData.setDescription("Login Successful");
-        }else {
+        } else {
             responseData.setStatus(404);
             responseData.setObj(false);
             responseData.setDescription("Login fails");

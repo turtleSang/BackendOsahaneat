@@ -5,6 +5,7 @@ import com.thanksen.osahaneat.Service.imp.FileServiceImp;
 import com.thanksen.osahaneat.dto.CategoryDto;
 import com.thanksen.osahaneat.payload.ResponseData;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -34,6 +35,12 @@ public class CategoryController {
         responseData.setStatus(200);
 
         return new ResponseEntity<>(responseData, HttpStatus.OK);
+    }
+
+    @CacheEvict("categoryHome")
+    @GetMapping("/cleancache")
+    public String clearCache(){
+        return "Clear Cache";
     }
 
     @GetMapping("/file/{filename:.+}")

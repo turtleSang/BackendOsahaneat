@@ -1,0 +1,55 @@
+11-10-2023  WARN 5496 org.hibernate.orm.deprecation: HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead  
+11-10-2023  WARN 5496 org.hibernate.mapping.RootClass: HHH000038: Composite-id class does not override equals(): com.thanksen.osahaneat.entity.keys.KeyOrderDetail  
+11-10-2023  WARN 5496 org.hibernate.mapping.RootClass: HHH000039: Composite-id class does not override hashCode(): com.thanksen.osahaneat.entity.keys.KeyOrderDetail  
+11-10-2023  WARN 5496 org.hibernate.mapping.RootClass: HHH000038: Composite-id class does not override equals(): com.thanksen.osahaneat.entity.keys.KeyMenuRestaurantMenu  
+11-10-2023  WARN 5496 org.hibernate.mapping.RootClass: HHH000039: Composite-id class does not override hashCode(): com.thanksen.osahaneat.entity.keys.KeyMenuRestaurantMenu  
+11-10-2023  WARN 5496 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
+11-10-2023 ERROR 5496 o.a.c.c.C.[.[.[/].[dispatcherServlet]: Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis] with root cause  
+java.net.UnknownHostException: No such host is known (server)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Inet6AddressImpl.java:52)
+	at java.base/java.net.InetAddress$PlatformResolver.lookupByName(InetAddress.java:1061)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1683)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:1004)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1673)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1415)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:156)
+	at io.netty.util.internal.SocketUtils$8.run(SocketUtils.java:153)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at io.netty.util.internal.SocketUtils.addressByName(SocketUtils.java:153)
+	at io.netty.resolver.DefaultNameResolver.doResolve(DefaultNameResolver.java:41)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:61)
+	at io.netty.resolver.SimpleNameResolver.resolve(SimpleNameResolver.java:53)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:55)
+	at io.netty.resolver.InetSocketAddressResolver.doResolve(InetSocketAddressResolver.java:31)
+	at io.netty.resolver.AbstractAddressResolver.resolve(AbstractAddressResolver.java:106)
+	at io.netty.bootstrap.Bootstrap.doResolveAndConnect0(Bootstrap.java:220)
+	at io.netty.bootstrap.Bootstrap.access$000(Bootstrap.java:46)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:189)
+	at io.netty.bootstrap.Bootstrap$1.operationComplete(Bootstrap.java:175)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:557)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setSuccess0(DefaultPromise.java:625)
+	at io.netty.util.concurrent.DefaultPromise.trySuccess(DefaultPromise.java:105)
+	at io.netty.channel.DefaultChannelPromise.trySuccess(DefaultChannelPromise.java:84)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.safeSetSuccess(AbstractChannel.java:990)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:516)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:429)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:486)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:174)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:167)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+11-10-2023  WARN 30860 org.hibernate.orm.deprecation: HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead  
+11-10-2023  WARN 30860 org.hibernate.mapping.RootClass: HHH000038: Composite-id class does not override equals(): com.thanksen.osahaneat.entity.keys.KeyOrderDetail  
+11-10-2023  WARN 30860 org.hibernate.mapping.RootClass: HHH000039: Composite-id class does not override hashCode(): com.thanksen.osahaneat.entity.keys.KeyOrderDetail  
+11-10-2023  WARN 30860 org.hibernate.mapping.RootClass: HHH000038: Composite-id class does not override equals(): com.thanksen.osahaneat.entity.keys.KeyMenuRestaurantMenu  
+11-10-2023  WARN 30860 org.hibernate.mapping.RootClass: HHH000039: Composite-id class does not override hashCode(): com.thanksen.osahaneat.entity.keys.KeyMenuRestaurantMenu  
+11-10-2023  WARN 30860 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration: spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning  
